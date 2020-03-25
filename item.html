@@ -436,7 +436,7 @@
 				var itemId = app.getUrlParam("itemId");
 				// 如果itemId为空，跳转到错误页面
 				if (itemId == null || itemId == undefined || itemId == '') {
-					window.location.href = "http://www.imooc.com/error/noexists";
+					window.location.href = "404.html";
 					return;
 				}
 				this.itemId = itemId;
@@ -636,7 +636,7 @@
 								var item = itemInfo.item;
 								// 如果item为空，则商品不存在，跳转错误页面
 								if (item == null || item == undefined || item == '') {
-									window.location.href = "http://www.imooc.com/error/noexists";
+									window.location.href = "404.html";
 								}
 
 								// console.log(itemInfo);

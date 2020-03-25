@@ -293,7 +293,7 @@
 							return;
 						}
 						
-						// 删除cookie中的商品
+						// 删除cookie中的商品  1.cookie要删除 2.页面上数组要删除
 						var shopcartList = app.getShopcartList();
 						for (var i = 0 ; i < shopcartList.length ; i ++) {
 							var tmpItem = shopcartList[i];
@@ -354,7 +354,7 @@
 							var shopcartList = app.getShopcartList();
 
 							var totalAmount = 0;
-							// debugger;
+							// debugger; 拿cookie中的数据和已选择的进行对比  specIds只是选中的规格id 进行匹配计算价格
 							for (var i = 0 ; i < shopcartList.length ; i ++) {
 								var tmpItem = shopcartList[i];
 
