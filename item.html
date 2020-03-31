@@ -507,7 +507,7 @@
 
 								for (var i = 0 ; i < commentList.length ; i ++) {
 									var date = commentList[i].createdTime;
-									var formatedTime = moment(date).format('YYYY年MM月DD日 h:mm:ss');
+									var formatedTime = moment(date).format('YYYY年MM月DD日 HH:mm:ss');
 									// console.log(formatedTime);
 									commentList[i].createdTime = formatedTime;
 								}
